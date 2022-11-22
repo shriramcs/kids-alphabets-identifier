@@ -11,6 +11,4 @@ import { Component, Input } from '@angular/core';
   `,
   styles: [`h1 { font-family: Lato; }`],
 })
-export class HeaderComponent {
-  @Input() name: string;
-}
+export class HeaderComponent {}
