@@ -1,0 +1,22 @@
+:host {
+    height: inherit;
+}
+.control-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: inherit;
+}
+
+.left, .right {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.left:hover, .right:hover {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}

@@ -1,0 +1,10 @@
+<p style="text-align: center;">
+    Letter: {{currentIndex + 1}} or {{alphabets.length}}
+</p>
+<div class="image-container" [ngStyle]="{'background-image': 'url(' + alphabets[currentIndex].imgSrc + ')'}">
+    <app-nagivation-controls
+        (onPrev)="handlePrev()"
+        (onNext)="handleNext()"
+    ></app-nagivation-controls>
+    <input [(ngModel)]="alphabets[currentIndex].value" class="control-input-value" #inputRef autofocus/>
+</div>

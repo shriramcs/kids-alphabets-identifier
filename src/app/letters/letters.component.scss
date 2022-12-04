@@ -1,0 +1,31 @@
+.wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .control{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    padding: 10px;
+    color: blue;
+  }
+  .btnCheck{
+    padding: 10px;
+  }
+  .btn-group{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .letters-wrapper{
+    height: 400px;
+    overflow-y: auto;
+  }

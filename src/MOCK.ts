@@ -1,4 +1,6 @@
-export const MOCK = [
+import { LetterI } from "./app/models/models";
+
+export const MOCK: LetterI[] = [
   {
     name: 'a',
     imgSrc:

@@ -1,0 +1,18 @@
+<section class="letters-wrapper">
+    <div *ngFor="let letter of alphabets" class="wrapper">
+      <img [src]="letter.imgSrc"class="image"/>
+      <input class="control" [(ngModel)]="letter.value" (keyup)="onChangeLetter($event, letter)"/>
+      
+      <div *ngIf="showResult">
+        {{letter.result ? '✔️' : '❎'}}
+      </div>
+    </div>
+  </section>
+  <div class="btn-group">
+    <button class="btnCheck" (click)="checkInput()">
+      Show results
+    </button>
+    <button class="btnCheck" (click)="clearInput()">
+      Clear
+    </button>
+  </div>
